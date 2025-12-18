@@ -61,7 +61,7 @@ const availableTemplates = computed(() => {
 
 const currentTemplateName = computed(() => {
     const t = templates.value.find(t => t.id === currentTemplateId.value);
-    if (!t) return '选择模板';
+    if (!t) return '选择模板1';
     if (!globalSettings.value.isPreviewLocked && !isBoundToCurrentView(t)) {
         return `${t.name} (未绑定)`;
     }
